@@ -141,4 +141,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return list;
     }
 
+    public List<SchoolSupply> getSchoolSupplyByAgeOrPrice(String age,String min_price,String max_price){
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<SchoolSupply> list = new ArrayList<>();
+//        Cursor cursor = db.rawQuery("Select * from schoolSupply where ages < '"+ age +"' and price>"+min_price+" and price<"+max_price, null);
+        Cursor cursor = db.rawQuery("Select * from schoolSupply where  price>"+min_price+" and price<"+max_price, null);
+        cursor.moveToFirst();
+        while (cursor.isAfterLast() == false){
+            SchoolSupply item = new SchoolSupply(cursor.getInt(0),cursor.getString(1),cursor.getInt(2),
+                    cursor.getString(3),cursor.getString(4),cursor.getDouble(5));
+            list.add(item);
+            cursor.moveToNext();
+        }
+        return list;
+    }
+
 }
