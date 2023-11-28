@@ -10,33 +10,51 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thêm Loại dụng cụ"
+        android:text="Thêm Loại Món Ăn"
         android:textSize="20dp"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
         android:id="@+id/titleTypeSupply"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tên"/>
+        android:text="Tên món ăn:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtName"/>
+        android:id="@+id/edtName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ghi chú"
+        android:text="Ghi chú:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtDesc"/>
+        android:id="@+id/edtDesc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thêm loại dụng cụ"
-        android:id="@+id/btnAddTypeSupply"/>
+        android:text="Thêm loại món ăn"
+        android:id="@+id/btnAddTypeSupply"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#C5816B"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
 
 </LinearLayout>

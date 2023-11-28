@@ -27,13 +27,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Xoá"
+        android:text=""
+        android:drawableLeft="@drawable/ic_baseline_delete_24"
         android:layout_weight="2"
+        android:backgroundTint="#C5816B"
         android:id="@+id/btnDelete"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_edit_note_24"
         android:layout_weight="2"
-        android:text="Sửa"
+        android:backgroundTint="#C5816B"
+        android:text=""
         android:id="@+id/btnModify"/>
 </LinearLayout>

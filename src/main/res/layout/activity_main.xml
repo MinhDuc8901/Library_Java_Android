@@ -9,15 +9,28 @@
     android:gravity="center">
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dụng cụ học tập"
+        android:text="Loại món ăn"
+        android:width="200dp"
+        android:id="@+id/btnTypeSchoolSupply"
+        android:backgroundTint="#C5816B"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:text="Món ăn"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="#C5816B"
         android:id="@+id/btnSchoolSupply"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Loại dụng cụ"
-        android:id="@+id/btnTypeSchoolSupply"/>
+
 
 </LinearLayout>

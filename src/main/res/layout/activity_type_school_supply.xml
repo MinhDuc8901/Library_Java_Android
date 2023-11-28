@@ -9,12 +9,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loại dụng cụ"
+        android:text="Loại Món Ăn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +37,8 @@
             android:id="@+id/btnAddTypeSchoolSupply"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thêm loại dụng cụ"
+            android:text="Thêm loại món ăn"
+            android:backgroundTint="#C5816B"
             />
     </LinearLayout>
 
